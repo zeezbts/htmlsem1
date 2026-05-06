@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 20px auto; padding: 20px;}
+    
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Block-Level Text Elements in HTML</h2>
+  
+  <p><strong>Block-level elements</strong> are HTML elements that always start on a new line and take up the full width available (stretching out to the left and right as far as they can). Think of them as "building blocks" that create the structure of your page.</p>
+
+  <div class="feature-box">
+    <h3>Key Characteristics:</h3>
+    <ul>
+      <li><strong>New Line:</strong> They always begin on a new line.</li>
+      <li><strong>Full Width:</strong> They automatically expand to fill the entire width of their parent container.</li>
+      <li><strong>Spacing:</strong> You can apply <code>margin</code>, <code>padding</code>, <code>height</code>, and <code>width</code> to them.</li>
+    </ul>
+  </div>
+
+  <h3>Common Block-Level Text Elements</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Element</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
+        <td><strong>Headings:</strong> Used for titles and subtitles. &lt;h1&gt; is the most important.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;p&gt;</code></td>
+        <td><strong>Paragraph:</strong> The standard element for blocks of text.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code></td>
+        <td><strong>Lists:</strong> Unordered (bullets) or Ordered (numbers) lists.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;li&gt;</code></td>
+        <td><strong>List Item:</strong> The individual items within a list (also block-level).</td>
+      </tr>
+      <tr>
+        <td><code>&lt;blockquote&gt;</code></td>
+        <td><strong>Blockquote:</strong> Used for long quotations from another source.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;pre&gt;</code></td>
+        <td><strong>Preformatted Text:</strong> Displays text exactly as written in the code.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;div&gt;</code></td>
+        <td><strong>Division:</strong> A generic container used to group other elements together.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>The Difference: Block vs. Inline</h3>
+  <p>Unlike block elements, <strong>Inline elements</strong> (like <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, or <code>&lt;strong&gt;</code>) do <strong>not</strong> start on a new line and only take up as much width as necessary.</p>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; }
+  
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Importance of Semantic HTML</h2>
+  <p>Semantic elements are tags that provide meaning to both the browser and the developer about the content they contain. Their importance spans several critical areas of web development:</p>
+
+  <ul>
+    <li>
+      <strong>Accessibility (Screen Readers)</strong>
+      Semantic tags allow assistive technologies to understand the structure of a page. This enables users with visual impairments to skip directly to the main content, navigation, or footer, rather than hearing the entire page read linearly.
+    </li>
+    <li>
+      <strong>Search Engine Optimization (SEO)</strong>
+      Search engines like Google use these tags to identify the most important parts of a page. Proper use of semantic elements helps crawlers index your content accurately, which can improve your search ranking.
+    </li>
+    <li>
+      <strong>Code Maintainability</strong>
+      Using meaningful tags makes the code much easier for developers to read and understand. It eliminates "div soup" (excessive nested div tags) and clearly defines the layout structure.
+    </li>
+    <li>
+      <strong>Consistent Styling and Performance</strong>
+      Browsers can apply default styles more effectively, and newer devices can better interpret how to display content based on the semantic definition of the tags.
+    </li>
+  </ul>
+
+  <h3>Standard Semantic Tag Meanings</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Semantic Tag</th>
+        <th>Definition and Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;header&gt;</code></td>
+        <td>Defines introductory content or a set of navigation links.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;nav&gt;</code></td>
+        <td>Designates a section intended for navigation menus.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;main&gt;</code></td>
+        <td>Specifies the unique and dominant content of the document.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;section&gt;</code></td>
+        <td>Represents a generic standalone section of a document.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;article&gt;</code></td>
+        <td>Contains independent, self-contained content like blog posts.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;aside&gt;</code></td>
+        <td>Defines content indirectly related to the main content (sidebars).</td>
+      </tr>
+      <tr>
+        <td><code>&lt;footer&gt;</code></td>
+        <td>Contains information about the author, copyright, or contact links.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
