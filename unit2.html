@@ -145,3 +145,234 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f4f4f4; }
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>The &lt;br&gt; and &lt;hr&gt; Tags</h2>
+  <p>Both tags are <strong>void elements</strong> (self-closing), meaning they do not require a closing tag.</p>
+
+  <div class="info-box">
+    <h3>1. The <span class="tag-name">&lt;br&gt;</span> Tag (Line Break)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Starts a new line without starting a new paragraph.</li>
+      <li><strong>Type:</strong> Inline-level element.</li>
+      <li><strong>Best Use:</strong> Poems, addresses, or lyrics where line breaks are part of the content.</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>2. The <span class="tag-name">&lt;hr&gt;</span> Tag (Horizontal Rule)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Creates a thematic break or a visual separator between sections.</li>
+      <li><strong>Type:</strong> Block-level element.</li>
+      <li><strong>Visual:</strong> Displays as a horizontal line stretching across the container.</li>
+    </ul>
+  </div>
+
+  <h3>Key Differences</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>&lt;br&gt; Tag</th>
+        <th>&lt;hr&gt; Tag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Full Name</strong></td>
+        <td>Line Break</td>
+        <td>Horizontal Rule</td>
+      </tr>
+      <tr>
+        <td><strong>Visual Effect</strong></td>
+        <td>Moves text to the next line.</td>
+        <td>Draws a horizontal line.</td>
+      </tr>
+      <tr>
+        <td><strong>Meaning</strong></td>
+        <td>Continues the same thought.</td>
+        <td>Signals a change in topic.</td>
+      </tr>
+      <tr>
+        <td><strong>Element Type</strong></td>
+        <td>Inline</td>
+        <td>Block</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 20px auto; padding: 20px; background-color: #f4f7f6; }
+  
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Detailed Guide to HTML Hyperlinks</h2>
+  <p>A hyperlink is an element that links one resource to another. In HTML, this is achieved using the <code>&lt;a&gt;</code> (anchor) tag. It is the primary tool for navigation on the web.</p>
+
+  <h3>Key Components & Attributes</h3>
+  <div class="points-container">
+    <div class="point-item">
+      <strong>href (Hypertext Reference)</strong>
+      The most critical attribute that specifies the destination URL or file path.
+    </div>
+    <div class="point-item">
+      <strong>Target Attribute</strong>
+      Determines where the link opens. <code>_self</code> opens in the same tab, while <code>_blank</code> opens in a new tab.
+    </div>
+    <div class="point-item">
+      <strong>Title Attribute</strong>
+      Provides a tooltip description that appears when a user hovers over the link.
+    </div>
+    <div class="point-item">
+      <strong>Download Attribute</strong>
+      Instructs the browser to download the linked resource instead of navigating to it.
+    </div>
+  </div>
+
+  <h3>Extra Critical Points</h3>
+  <ul>
+    <li><strong>Absolute URLs:</strong> Used to link to external websites (e.g., <code>https://google.com</code>).</li>
+    <li><strong>Relative URLs:</strong> Used to link to pages within the same website (e.g., <code>contact.html</code>).</li>
+    <li><strong>Anchor Links:</strong> Used to jump to a specific ID on the same page (e.g., <code>#top</code>).</li>
+    <li><strong>Protocol Links:</strong> Can trigger specific actions like <code>mailto:</code> for emails or <code>tel:</code> for phone calls.</li>
+    <li><strong>Accessibility:</strong> Always use descriptive anchor text (avoid "Click Here") to help screen readers understand the link's purpose.</li>
+  </ul>
+
+  <h3>Hyperlink State Categories</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Unvisited</strong></td>
+        <td>The default state of a link the user has not yet clicked.</td>
+      </tr>
+      <tr>
+        <td><strong>Visited</strong></td>
+        <td>Indicates the user has already navigated to this destination.</td>
+      </tr>
+      <tr>
+        <td><strong>Hover</strong></td>
+        <td>The visual change when a user's mouse pointer is over the link.</td>
+      </tr>
+      <tr>
+        <td><strong>Active</strong></td>
+        <td>The state of the link at the exact moment it is being pressed.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+    <thead>
+      <tr bgcolor="#eeeeee">
+        <th align="left">What is Marquee?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>The <strong>&lt;marquee&gt;</strong> tag is used to create <strong>scrolling text or images</strong> that move across a web page automatically.</p>
+          
+          <h3>Key Features:</h3>
+          <ul>
+            <li><strong>Direction:</strong> Can move left, right, up, or down using the <code>direction</code> attribute.</li>
+            <li><strong>Behavior:</strong> Can loop, slide to a stop, or bounce back and forth (alternate).</li>
+            <li><strong>Speed:</strong> Adjusted using the <code>scrollamount</code> attribute.</li>
+          </ul>
+
+          <p><strong>Current Status:</strong> It is <u>obsolete</u> and <u>deprecated</u>. Modern websites do not use it because it is not supported in official HTML5 standards and causes accessibility issues.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th colspan="2">
+          <font color="white" size="5">The HTML &lt;table&gt; Element</font>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <p>The <strong>&lt;table&gt;</strong> element is used to organize data into rows and columns. It is designed specifically for <strong>tabular information</strong> like schedules, statistics, and price lists.</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="50%" valign="top">
+          <h3>Core Tags</h3>
+          <ul>
+            <li><strong>&lt;table&gt;</strong>: The main container.</li>
+            <li><strong>&lt;tr&gt;</strong>: Defines a Table Row.</li>
+            <li><strong>&lt;th&gt;</strong>: A Header Cell (bold by default).</li>
+            <li><strong>&lt;td&gt;</strong>: A Standard Data Cell.</li>
+            <li><strong>&lt;caption&gt;</strong>: Adds a title above the table.</li>
+          </ul>
+        </td>
+        <td width="50%" valign="top">
+          <h3>Key Attributes</h3>
+          <ul>
+            <li><strong>colspan</strong>: Merges cells horizontally (across columns).</li>
+            <li><strong>rowspan</strong>: Merges cells vertically (across rows).</li>
+            <li><strong>cellpadding</strong>: Space inside the cell.</li>
+            <li><strong>cellspacing</strong>: Space between cells.</li>
+            <li><strong>width</strong>: Sets the table or column width.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" >
+          <h3>Important Points</h3>
+          <ul>
+            <li><strong>Usage:</strong> Use tables for data only, not for page layouts.</li>
+            <li><strong>Accessibility:</strong> Using <code>&lt;th&gt;</code> helps screen readers identify headers.</li>
+            <li><strong>Structure:</strong> Even empty cells need a <code>&lt;td&gt;&lt;/td&gt;</code> to keep the grid aligned.</li>
+            <li><strong>Alignment:</strong> Use <code>align="center"</code> or <code>valign="top"</code> to position content within cells.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
