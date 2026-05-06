@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html sem 1</title>
+</head>
+<body>
+
+<table style="width: fit-content;" border="1">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Internet</th>
+      <th>Intranet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Accessibility</strong></td>
+      <td>Public: Anyone can access it.</td>
+      <td>Private: Only authorized personnel (employees).</td>
+    </tr>
+    <tr>
+      <td><strong>Users</strong></td>
+      <td>Unlimited; global population.</td>
+      <td>Limited; specific organization members.</td>
+    </tr>
+    <tr>
+      <td><strong>Security</strong></td>
+      <td>Low: Open to threats (hackers).</td>
+      <td>High: Protected by firewalls and encryption.</td>
+    </tr>
+    <tr>
+      <td><strong>Ownership</strong></td>
+      <td>Not owned by one entity; public.</td>
+      <td>Owned/managed by a specific organization.</td>
+    </tr>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Varies based on provider/traffic.</td>
+      <td>Generally faster within its own network.</td>
+    </tr>
+    <tr>
+      <td><strong>Usage</strong></td>
+      <td>Global commerce, social media</td>
+      <td>Internal communication, data sharing.</td>
+    </tr>
+  </tbody>
+</table>
+    <br><br><table border="1">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Webpage</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Analogy</strong></td>
+      <td>A single page in a book.</td>
+      <td>The entire book.</td>
+    </tr>
+    <tr>
+      <td><strong>Definition</strong></td>
+      <td>A single document viewable in a browser.</td>
+      <td>A collection of interlinked webpages.</td>
+    </tr>
+    <tr>
+      <td><strong>URL</strong></td>
+      <td>Contains a unique extension (e.g., /about).</td>
+      <td>Uses a main domain (e.g., ://example.com).</td>
+    </tr>
+    <tr>
+      <td><strong>Content</strong></td>
+      <td>Covers one specific topic or entity.</td>
+      <td>Covers multiple entities or categories.</td>
+    </tr>
+    <tr>
+      <td><strong>Development</strong></td>
+      <td>Faster and simpler to create.</td>
+      <td>Complex; requires more time & planning.</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance</strong></td>
+      <td>Minimal effort; involves updating links.</td>
+      <td>High effort; involves hosting, security</td>
+    </tr>
+  </tbody>
+</table><br><br>
+<style>
+  body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; }
+  h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+  h3 { color: #2980b9; margin-top: 20px; }
+  ul { margin-bottom: 20px; }
+  li { margin-bottom: 8px; }
+  .component-box { background-color: #f4f7f6; padding: 15px; border-left: 5px solid #3498db; }
+  strong { color: #2c3e50; }
+</style>
+  <h2>How Web Browsers Work</h2>
+  <p>A web browser’s primary job is to turn code into a visual, interactive experience. This happens in three main phases:</p>
+
+  <h3>1. The Request (Fetching)</h3>
+  <ul>
+    <li><strong>DNS Lookup:</strong> The browser finds the "IP address" (server location) for the domain name you typed.</li>
+    <li><strong>HTTP Request:</strong> It sends a formal request to that server for the site's files (HTML, CSS, JS).</li>
+    <li><strong>Response:</strong> The server sends the files back in small data packets.</li>
+  </ul>
+
+  <h3>2. The Parsing (Organizing)</h3>
+  <ul>
+    <li><strong>DOM Building:</strong> The browser reads <strong>HTML</strong> to create a map of the content (text, buttons, headers).</li>
+    <li><strong>CSSOM Building:</strong> It reads <strong>CSS</strong> to understand the "look" (colors, fonts, layout).</li>
+    <li><strong>JavaScript:</strong> It executes code to make the page interactive (menus, animations).</li>
+  </ul>
+
+  <h3>3. The Rendering (Displaying)</h3>
+  <ul>
+    <li><strong>Render Tree:</strong> The browser combines content (DOM) and styles (CSSOM) into a final blueprint.</li>
+    <li><strong>Layout:</strong> It calculates exactly where every element fits based on your screen size.</li>
+    <li><strong>Painting & Compositing:</strong> It pixels in the colors and layers the elements to show the final image.</li>
+  </ul>
+
+  <div class="component-box">
+    <h3>Core Components</h3>
+    <ul>
+      <li><strong>User Interface:</strong> The address bar, buttons, and tabs you interact with.</li>
+      <li><strong>Rendering Engine:</strong> The "brain" that draws the page (e.g., Blink, Gecko).</li>
+      <li><strong>Browser Cache:</strong> Stores files locally so repeat visits load instantly.</li>
+    </ul>
+  </div>
+</body>
+</html>
