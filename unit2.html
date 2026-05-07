@@ -2,12 +2,39 @@
 <html>
 <head>
 <style>
+    
     *{
         align-items: left;
         width: 450px;
     }
-  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 20px auto; padding: 20px;}
-    
+    p {
+  color: #333333;              /* Changes text color */
+  font-family: Arial, sans-serif; /* Sets the font type */
+  font-size: 16px;             /* Adjusts the size of the text */
+  font-weight: normal;         /* Can be 'bold', 'lighter', or numeric (e.g., 400) */
+  line-height: 1.6;            /* Adds space between lines for better readability */
+}
+
+    table {
+  width: 100%;
+  border-collapse: collapse; /* Merges borders into single lines */
+  font-family: sans-serif;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd; /* Adds subtle separation between rows */
+}
+
+th {
+  background-color: #4CAF50; /* Primary color for header */
+  color: white;
+}
+
+  
 </style>
 </head>
 <body>
@@ -35,6 +62,7 @@
       </tr>
     </thead>
     <tbody>
+      
       <tr>
         <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
         <td><strong>Headings:</strong> Used for titles and subtitles. &lt;h1&gt; is the most important.</td>
@@ -275,9 +303,7 @@
   <table border="1" cellpadding="10" cellspacing="0" width="100%">
     <thead>
       <tr>
-        <th colspan="2">
-          <font color="white" size="5">The HTML &lt;table&gt; Element</font>
-        </th>
+        <th>TABLE</th>
       </tr>
     </thead>
     <tbody>
