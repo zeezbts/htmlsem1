@@ -1,5 +1,31 @@
-<a href="upi://pay?pa=santhosh2008svg@okicici&pn=sandy&am=1&cu=INR&tr=PAY123456" 
-   onclick="showDownload()" 
-   class="pay-btn">
-   Pay with GPay
-</a>
+<div class="item-row" style="text-align:center; border:1px solid #ddd; padding:20px; border-radius:10px;">
+  <h3>APRIL 2024 (₹1)</h3>
+  
+  <!-- This image works for PC users to scan -->
+  <p>Scan to Pay ₹5</p>
+  <img src="gpay.jpeg" alt="GPay QR Code" style="width:200px; border:5px solid #fff; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+  
+  <p>OR</p>
+
+  <!-- This button is for Mobile users -->
+  <a href="upi://pay?pa=santhosh2008svg@okicici&pn=sandy&am=5&cu=INR" class="pay-btn" style="background:#000; color:#fff; padding:10px 20px; text-decoration:none; display:inline-block; border-radius:5px;">
+     Open GPay App
+  </a>
+
+  <br><br>
+  <button onclick="showDownload()" style="background:#28a745; color:white; border:none; padding:10px; cursor:pointer; border-radius:5px;">
+    I have Paid (Download PDF)
+  </button>
+</div>
+
+<div id="download-section" style="display:none; margin-top:20px; border:2px dashed #28a745; padding:15px;">
+  <p>✅ Thank you for the payment!</p>
+  <a href="2024APRIL.pdf" download class="download-btn">Click here to Download PDF Now</a>
+</div>
+
+<script>
+function showDownload() {
+  // Show the link immediately when they click the button
+  document.getElementById('download-section').style.display = 'block';
+}
+</script>
