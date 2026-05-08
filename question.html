@@ -1,22 +1,25 @@
-<style>
-  .container { max-width: 500px; margin: auto; text-align: center; font-family: sans-serif; }
-  .pdf-item { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; }
-  .qr-code { width: 150px; margin: 10px 0; }
-  .pay-app-btn { background: #4285F4; color: white; padding: 10px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 5px; }
-</style>
-
-<div class="container">
-  <h1>HTML PDF Store</h1>
-
-  <div class="pdf-item">
-    <h3>Introduction to HTML (2 Marks)</h3>
-    <p>Price: ₹1</p>
-    <!-- Your generated QR code image -->
-    <img src="gpay.jpeg" alt="Scan to Pay" class="qr-code"><br>
-    
-    <!-- Mobile users can click this to open GPay directly -->
-    <a href="upi://pay?pa=santhosh2008svg-1@okaxis&pn=sandy&am=1&cu=INR" class="pay-app-btn">
-       Open in GPay
-    </a>
-  </div>
+<!-- Replace your current item row with this logic -->
+<div class="item-row">
+  <h3>APRIL 2024 (₹1)</h3>
+  <a href="upi://pay?pa=YOUR_UPI_ID&pn=YOUR_NAME&am=1&cu=INR" 
+     onclick="showDownload()" 
+     class="pay-btn">
+     Pay with GPay
+  </a>
 </div>
+
+<!-- Hidden Download Section -->
+<div id="download-section" style="display:none; margin-top:20px; border:2px dashed #28a745; padding:15px;">
+  <p>✅ Payment Initiated!</p>
+  <p>Once you finish the payment in GPay, click below:</p>
+  <a href="2024APRIL.pdf" download class="download-btn">Download PDF Now</a>
+</div>
+
+<script>
+function showDownload() {
+  // Shows the download link 2 seconds after they click 'Pay'
+  setTimeout(function() {
+    document.getElementById('download-section').style.display = 'block';
+  }, 2000);
+}
+</script>
