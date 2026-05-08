@@ -1,32 +1,64 @@
-<div class="item-row" style="text-align:center; border:1px solid #ddd; padding:20px; border-radius:10px;">
+<style>
+  .payment-card {
+    text-align: center;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+    background: #fff;
+  }
+  .qr-image {
+    width: 220px; /* Adjust size as needed */
+    height: auto;
+    border: 1px solid #eee;
+    margin: 15px 0;
+  }
+  .verify-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  #download-section {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border: 1px dashed #28a745;
+    border-radius: 10px;
+  }
+</style>
+
+<div class="payment-card">
   <h3>APRIL 2024 (₹1)</h3>
+  <p style="font-size: 14px; color: #666;">Scan this QR using GPay to pay</p>
   
-  <!-- This image works for PC users to scan -->
-  <p>Scan to Pay ₹5</p>
-  <img src="gpay.jpeg" alt="GPay QR Code" style="width:200px; border:5px solid #fff; box-shadow:0 0 10px rgba(0,0,0,0.1);">
-  
-  <p>OR</p>
+  <!-- Step 1: User Scans this image -->
+  <img src="gpay.jpeg" alt="Scan to Pay" class="qr-image">
 
-  <a href="tez://upi/pay?pa=santhosh2008svg@okicici&pn=sandy&am=10&cu=INR&tr=ANY_UNIQUE_ID_123" 
-   onclick="showDownload()" 
-   class="pay-btn">
-   Pay with GPay
-</a>
+  <p><strong>Amount: ₹1</strong></p>
 
-<br><br>
-  <button onclick="showDownload()" style="background:#28a745; color:white; border:none; padding:10px; cursor:pointer; border-radius:5px;">
-    I have Paid (Download PDF)
-  </button>
+  <!-- Step 2: User clicks this after paying -->
+  <button class="verify-btn" onclick="showDownload()">I Have Paid (Download)</button>
 </div>
 
-<div id="download-section" style="display:none; margin-top:20px; border:2px dashed #28a745; padding:15px;">
+<!-- Hidden Download Section -->
+<div id="download-section" id="download-section">
   <p>✅ Thank you for the payment!</p>
-  <a href="2024APRIL.pdf" download class="download-btn">Click here to Download PDF Now</a>
+  <a href="2024APRIL.pdf" download class="download-btn" style="color: #007bff; font-weight: bold;">
+    Click Here to Download PDF
+  </a>
 </div>
 
 <script>
 function showDownload() {
-  // Show the link immediately when they click the button
   document.getElementById('download-section').style.display = 'block';
+  // Optional: Scroll down to the download link
+  document.getElementById('download-section').scrollIntoView({ behavior: 'smooth' });
 }
 </script>
