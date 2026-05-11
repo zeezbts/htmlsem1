@@ -217,6 +217,153 @@ th {
   </table>
 </div>
 <div class="card">
+
+
+
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
+        }
+        .main-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .code-box {
+            background: #282c34;
+            color: #61dafb;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+    </style>
+
+<div class="main-container">
+    <h1>Font Style Elements and Attributes</h1>
+    <p>In HTML, font styling is achieved through specific formatting elements or the CSS <code>style</code> attribute.</p>
+
+    <h2>1. Text Formatting Elements</h2>
+    <p>These tags are used to wrap text to change its visual appearance directly.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&lt;b&gt;</code></td>
+                <td>Bold text</td>
+                <td><b>Example Bold</b></td>
+            </tr>
+            <tr>
+                <td><code>&lt;i&gt;</code></td>
+                <td>Italic text</td>
+                <td><i>Example Italic</i></td>
+            </tr>
+            <tr>
+                <td><code>&lt;u&gt;</code></td>
+                <td>Underline text</td>
+                <td><u>Example Underline</u></td>
+            </tr>
+            <tr>
+                <td><code>&lt;mark&gt;</code></td>
+                <td>Highlighted text</td>
+                <td><mark>Example Highlight</mark></td>
+            </tr>
+            <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td>Small text size</td>
+                <td><small>Example Small</small></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Modern Style Attributes (CSS)</h2>
+    <p>The <code>style</code> attribute is the modern way to define font properties like size, color, and face.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Example Usage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>font-family</code></td>
+                <td>Defines the font type (e.g., Arial)</td>
+                <td><code>style="font-family: Arial;"</code></td>
+            </tr>
+            <tr>
+                <td><code>font-size</code></td>
+                <td>Sets the size (e.g., 20px)</td>
+                <td><code>style="font-size: 20px;"</code></td>
+            </tr>
+            <tr>
+                <td><code>color</code></td>
+                <td>Changes the text color</td>
+                <td><code>style="color: #ff0000;"</code></td>
+            </tr>
+            <tr>
+                <td><code>font-weight</code></td>
+                <td>Sets thickness (e.g., bold)</td>
+                <td><code>style="font-weight: bold;"</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Code Example</h2>
+    <div class="code-box">
+        &lt;p style="color: blue; font-family: Verdana; font-size: 18px;"&gt;<br>
+        &nbsp;&nbsp;This text is styled using attributes.<br>
+        &lt;/p&gt;
+    </div>
+</div>
+
+
+
+
+
+
+
   <h2>Detailed Guide to HTML Hyperlinks</h2>
   <p>A hyperlink is an element that links one resource to another. In HTML, this is achieved using the <code>&lt;a&gt;</code> (anchor) tag. It is the primary tool for navigation on the web.</p>
 

@@ -1,51 +1,52 @@
 <style>
-  .payment-card {
-    text-align: center; border: 2px solid #ddd; padding: 20px;
-    border-radius: 15px; max-width: 300px; margin: 20px auto; background: #fff;
+  /* Container for better layout */
+  .button-container {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  .qr-image { width: 220px; height: auto; border: 1px solid #eee; margin: 15px 0; }
-  .verify-btn {
-    background-color: #28a745; color: white; border: none;
-    padding: 12px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%;
+
+  /* Stylish Button Design */
+  .pdf-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
   }
-  /* Each download section is hidden by default */
-  .download-section {
-    display: none; margin-top: 20px; padding: 15px;
-    background-color: #e9f7ef; border: 1px dashed #28a745; border-radius: 10px;
+
+  /* Hover Effects */
+  .pdf-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+
+  /* Active/Click effect */
+  .pdf-button:active {
+    transform: translateY(0);
+  }
+
+  /* Specific color for November for visual variety */
+  .btn-nov {
+    background-color: #6c757d;
+  }
+  .btn-nov:hover {
+    background-color: #495057;
   }
 </style>
 
-<!-- PDF ITEM 1: APRIL 2024 -->
-<div class="payment-card">
-  <h3>APRIL 2024 (₹1)</h3>
-  <img src="gpay.jpeg" alt="Scan to Pay" class="qr-image">
-  <p><strong>Amount: ₹1</strong></p>
-  <button class="verify-btn" onclick="showDownload('download-2024')">I Have Paid (Download)</button>
-  
-  <div id="download-2024" class="download-section">
-    <p>✅ Thank you! Download below:</p>
-    <a href="2024APRIL.pdf" download style="color: #007bff; font-weight: bold;">Click Here to Download 2024 PDF</a>
-  </div>
+<div class="button-container">
+  <a href="html two marks.doc"  class="pdf-button">ALL 2 MARKS</a>
+  <a href="question2026.pdf" class="pdf-button">APRIL 2026</a>
+  <a href="2024APRIL.pdf" class="pdf-button">APRIL 2024</a>
+  <a href="2024NOVEMBER.pdf" class="pdf-button btn-nov">NOV 2024</a>
 </div>
-
-<!-- PDF ITEM 2: APRIL 2026 -->
-<div class="payment-card">
-  <h3>APRIL 2026 (₹1)</h3>
-  <img src="gpay.jpeg" alt="Scan to Pay" class="qr-image">
-  <p><strong>Amount: ₹1</strong></p>
-  <!-- Pass the unique ID 'download-2026' to the function -->
-  <button class="verify-btn" onclick="showDownload('download-2026')">I Have Paid (Download)</button>
-  
-  <div id="download-2026" class="download-section">
-    <p>✅ Thank you! Download below:</p>
-    <a href="question2026.pdf" download style="color: #007bff; font-weight: bold;">Click Here to Download 2026 PDF</a>
-  </div>
-</div>
-
-<script>
-// This function now takes an ID so it knows WHICH pdf to show
-function showDownload(id) {
-  document.getElementById(id).style.display = 'block';
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-</script>
